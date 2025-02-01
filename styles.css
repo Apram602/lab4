@@ -1,0 +1,118 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply Global Styling */
+body, html {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent navbar */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f8d21e;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh; /* Full screen height */
+    background: url('a.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Dark Overlay for Text Readability */
+.overlay {
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay effect */
+    padding: 50px;
+    border-radius: 10px;
+}
+
+/* Hero Text */
+.overlay h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #8dcaff;
+    letter-spacing: 2px;
+}
+
+.overlay h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.overlay p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: #0077b5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #005a8c;
+}
+
+
+/* Footer */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
